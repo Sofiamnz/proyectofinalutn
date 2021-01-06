@@ -1,0 +1,39 @@
+<table class="table">
+  <thead class="thead-dark">
+      {{#each reservas}}
+    <tr>
+      <th scope="col">Número de Reserva</th>
+      <th scope="col">Cabaña</th>
+      <th scope="col">Inicio</th>
+      <th scope="col">Fin</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{{idReservas}}</th>
+      <td>{{numeroCabaña}}</td>
+      <td>{{fechaInicio}}</td>
+      <td>{{fechaFin}}</td>
+      <td><a href="/reservas/{{idReservas}}" class="btn btn-dark btn-block">Ver más</a></td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+
+
+
